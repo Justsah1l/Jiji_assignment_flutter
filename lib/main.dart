@@ -98,27 +98,12 @@ class _HomePageState extends State<HomePage> {
               
               // Avatar Image
               Container(
-                width: 200, 
-                height: 200,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  
-                  gradient: LinearGradient(
-                    colors: [Color(0xFFE0F7FA), Color(0xFFB2EBF2)],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                  ),
-                ),
-                child: ClipOval(
-                  child: Icon(
-                    Icons.face_3, 
-                    size: 160,
-                    color: Colors.teal[700],
-                  ),
+                height: 200, 
+                child: Image.asset(
+                  'assets/images/jiji_avatar.png',
+                  fit: BoxFit.contain,
                 ),
               ),
-
-              const SizedBox(height: 40),
 
               // Search Bar
               Container(
